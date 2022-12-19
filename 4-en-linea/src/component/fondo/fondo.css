@@ -1,0 +1,51 @@
+*{
+  top: 0px;
+  padding: 0px;
+
+}
+
+.contenedor-principalFondo{
+  display: flex;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(81, 83, 82);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+
+
+}
+.btn-fondo{
+ display: flex;
+ width: calc(5vw - 2px);
+ height: calc(5vw - 2px);
+ border: 1px solid black;
+ transition: 1.5s;
+}
+
+.btn-fondo:hover{
+  background-color: #23c483;
+  transition: 0s;
+
+}
+
+@media(max-width: 900px){
+
+  btn-fondo{
+
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+
+  }
+}
+@media(max-width: 600px){
+
+  btn-fondo{
+
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+
+  }
+}
+

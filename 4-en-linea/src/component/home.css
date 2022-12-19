@@ -1,0 +1,203 @@
+.contenedor-principal{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(131, 120, 118);
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px
+  
+}
+
+.turnoJugador1{
+  display: flex;
+  background-color: red;
+  margin-left: 10%;
+  border-radius: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.turnoJugador2{
+  display: flex;
+  background-color: rgb(255, 247, 0);
+  margin-left: 10%;
+  border-radius: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.menu{
+  display: flex;
+  margin-left: 10%;
+  width: 700px;
+  height: 100px;
+  justify-content: space-between;
+  border-radius: 20px;
+  
+}
+.jugador1-activo{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  background-color: rgba(255, 0, 0, 0.43);
+  animation: parpadeo 1s alternate infinite ease;
+  border-radius: 20px 0px 0px 20px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.jugador1-inactivo strong{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.jugador1-inactivo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  background-color: rgb(167, 167, 167);
+  border-radius: 20px 0px 0px 20px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.jugador1-activo strong{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.jugador2-inactivo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  background-color: rgb(167, 167, 167);
+  border-radius: 0px 20px 20px 0px;
+  justify-content: center;
+  align-items: center;
+}
+.jugador2-activo strong{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.jugador2-activo{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  background-color: rgba(255, 247, 0, 0.496);
+  animation: parpadeo 1s alternate infinite ease;
+  border-radius: 0px 20px 20px 0px;
+  justify-content: center;
+  align-items: center;
+}
+.jugador2-inactivo strong{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contenedor-juego{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 600px;
+  
+  margin-left: 10%;
+}
+.header{
+  display: flex;
+  width: 100%;
+  
+}
+.juego{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(45, 45, 45);
+  gap: 3px;
+  height: 100%;
+  position: static;
+  border-radius: 20px;
+
+}
+.celda{
+  display: flex;
+  width: 90px;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 50%;
+  
+  
+  
+}
+.btn-jugador1{
+  width: 90%;
+  height: 90%;
+  border-radius: 100%;
+  border: transparent;
+  background-color: red;
+  border: 1px solid black;
+  box-shadow: 0px 0px 6px 2px rgba(0,0,0,1);
+ 
+} 
+
+
+.btn-jugador2{
+  width: 90%;
+  height: 90%;
+  border-radius: 100%;
+  border: transparent;
+  background-color: rgb(255, 247, 0);
+  border: 1px solid black;
+  box-shadow: 0px 0px 6px 2px rgba(0,0,0,1);
+  
+
+} 
+
+
+.btn-comun{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: transparent;
+  
+}
+@keyframes parpadeo{
+  0% {
+    border: 5px solid rgb(55, 255, 0);
+    box-shadow: -2px 4px 28px 1px rgb(9, 255, 0);
+    -webkit-box-shadow: -2px 4px 28px 1px rgb(9, 255, 0);
+    -moz-box-shadow: -2px 4px 28px 1px rgb(9, 255, 0);
+  }
+
+  100% {
+    border: 5px solid rgb(9, 255, 0);
+    
+  }
+}

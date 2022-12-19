@@ -1,0 +1,81 @@
+
+
+.contenedor-landing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.contenedor-landinga{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+  
+}
+
+.opcionesDeJuego{
+  display: flex;
+  width: 400px;
+  height: 200px;
+  background-color: rgb(68, 76, 83);
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+}
+.error{
+  font-size: 20px;
+  
+  color: red;
+}
+.good{
+  font-size: 20px;
+  
+  color:green;
+}
+
+.btn {
+  padding: 1.3em 3em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+/* .btn-info{
+  display: flex;
+  margin-left: 325px;
+} */
+/* .btn{
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+*/
+.btns{
+  display: flex;
+  gap: 230px;
+  justify-content: space-between;
+} 
