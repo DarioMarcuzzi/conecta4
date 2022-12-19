@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { IoIosCloseCircleOutline } from "react-icons/io";
+import { IoIosCloseCircleOutline, IoMdWarning } from "react-icons/io";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { BsFillBackspaceFill } from "react-icons/bs";
 import Home from "../Home.jsx";
@@ -63,6 +63,15 @@ function Landing() {
     });
   };
 
+  const vsPc = () => {
+    Swal.fire({
+      title: "Oops",
+      text: "Proximamente disponible",
+      icon: "warning",
+      button: "acepta",
+    });
+  };
+
   if (state === 0) {
     return (
       <div className="contenedor-landing">
@@ -72,7 +81,7 @@ function Landing() {
             <BsFillInfoCircleFill />
           </button>
           <div className="opcionesDeJuego">
-            <button className="btn" disabled>
+            <button className="btn" onClick={vsPc}>
               {" "}
               Jugador1 vs Pc
             </button>
