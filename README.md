@@ -14,3 +14,5 @@ Reglas:
   
 
 Buena suerte
+![Sin título](https://user-images.githubusercontent.com/97201734/211034262-ba83ba87-7211-4430-9925-dcaa57a9021b.jpg)
+![players](https://user-images.githubusercontent.com/97201734/211034311-dd3d85c2-fc3e-4829-ae49-66ac83f6d4a8.jpg)
