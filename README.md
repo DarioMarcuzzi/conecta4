@@ -1,3 +1,4 @@
+
 # conecta4
 
 Hola bienvenido! 
@@ -16,3 +17,5 @@ Reglas:
 Buena suerte
 ![Sin título](https://user-images.githubusercontent.com/97201734/211034262-ba83ba87-7211-4430-9925-dcaa57a9021b.jpg)
 ![players](https://user-images.githubusercontent.com/97201734/211034311-dd3d85c2-fc3e-4829-ae49-66ac83f6d4a8.jpg)
+![preparacion](https://user-images.githubusercontent.com/97201734/211034579-45014608-c279-4a43-adf8-47a75d87a53d.jpg)
+![juego](https://user-images.githubusercontent.com/97201734/211034532-2dc497b0-1c16-4e64-a6b9-bec4361bf3e0.jpg)
