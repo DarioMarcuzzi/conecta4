@@ -10,27 +10,6 @@
   
 }
 
-.turnoJugador1{
-  display: flex;
-  background-color: red;
-  margin-left: 10%;
-  border-radius: 20px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  
-}
-.turnoJugador2{
-  display: flex;
-  background-color: rgb(255, 247, 0);
-  margin-left: 10%;
-  border-radius: 20px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  
-}
-
 .menu{
   display: flex;
   margin-left: 10%;
@@ -45,19 +24,14 @@
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  background-color: rgba(255, 0, 0, 0.43);
+  /* background-color: rgba(255, 0, 0, 0.43); */
+  background: rgb(252,2,15);
+  background: linear-gradient(90deg, rgba(252,2,15,1) 0%, rgba(253,255,227,1) 100%);
   animation: parpadeo 1s alternate infinite ease;
   border-radius: 20px 0px 0px 20px;
   justify-content: center;
   align-items: center;
   
-}
-.jugador1-inactivo strong{
-  display: flex;
-  margin-left: 10px;
-  margin-top: 10px;
-  justify-content: center;
-  align-items: center;
 }
 
 .jugador1-inactivo{
@@ -70,6 +44,13 @@
   justify-content: center;
   align-items: center;
   
+}
+.jugador1-inactivo strong{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .jugador1-activo strong{
   display: flex;
@@ -89,22 +70,26 @@
   justify-content: center;
   align-items: center;
 }
-.jugador2-activo strong{
-  display: flex;
-  margin-left: 10px;
-  margin-top: 10px;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .jugador2-activo{
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 50%;
-  background-color: rgba(255, 247, 0, 0.496);
+  /* background-color: rgba(255, 247, 0, 0.496);
+   */
+   background: rgb(253,255,227);
+  background: linear-gradient(90deg, rgba(253,255,227,1) 0%, rgba(252,235,2,1) 100%);
   animation: parpadeo 1s alternate infinite ease;
   border-radius: 0px 20px 20px 0px;
+  justify-content: center;
+  align-items: center;
+}
+.jugador2-activo strong{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -190,14 +175,14 @@
 }
 @keyframes parpadeo{
   0% {
-    border: 5px solid rgb(55, 255, 0);
-    box-shadow: -2px 4px 28px 1px rgb(9, 255, 0);
-    -webkit-box-shadow: -2px 4px 28px 1px rgb(9, 255, 0);
-    -moz-box-shadow: -2px 4px 28px 1px rgb(9, 255, 0);
+    border: 5px solid rgb(254, 255, 247);
+    box-shadow: -2px 4px 28px 1px rgb(229, 251, 255);
+    -webkit-box-shadow: -2px 4px 28px 1px rgb(223, 250, 255);
+    -moz-box-shadow: -2px 4px 28px 1px rgb(209, 247, 255);
   }
 
   100% {
-    border: 5px solid rgb(9, 255, 0);
+    border: 5px solid rgb(221, 249, 255);
     
   }
 }

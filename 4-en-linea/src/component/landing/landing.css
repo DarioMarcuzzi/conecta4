@@ -17,6 +17,8 @@
   
 }
 
+
+
 .opcionesDeJuego{
   display: flex;
   width: 400px;
@@ -27,6 +29,13 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 20px;
+  border: 1px solid black;
+  
+}
+
+.opcionesDeJuego:hover{
+  border: 2px solid black;
+  transition: 0s;
 }
 .error{
   font-size: 20px;

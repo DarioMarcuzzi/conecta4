@@ -28,21 +28,35 @@ function Home({ jugadores }) {
         Swal.fire({
           title: `Has ganado ${jugadores.jugador1}!`,
           icon: "success",
-          button: "aceptar",
+          confirmButtonText: "aceptar",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            setGanadasJugador1(ganadasJugador1 + 1);
+            setGanador(0);
+            resetTablero();
+          } else {
+            setGanadasJugador2(ganadasJugador2 + 1);
+            setGanador(0);
+            resetTablero();
+          }
         });
-        setGanadasJugador1(ganadasJugador1 + 1);
-        setGanador(0);
-        resetGame();
       } else if (ganador === 2) {
         setJugador(2);
         Swal.fire({
           title: `Has ganado ${jugadores.jugador2}!`,
           icon: "success",
-          button: "aceptar",
+          confirmButtonText: "aceptar",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            setGanadasJugador2(ganadasJugador2 + 1);
+            setGanador(0);
+            resetTablero();
+          } else {
+            setGanadasJugador2(ganadasJugador2 + 1);
+            setGanador(0);
+            resetTablero();
+          }
         });
-        setGanadasJugador2(ganadasJugador2 + 1);
-        setGanador(0);
-        resetGame();
       }
     } else {
       setGanadasJugador1(ganadasJugador1 + 1);
@@ -51,9 +65,19 @@ function Home({ jugadores }) {
         title: "Empate!!",
         icon: "warning",
         text: "Se les dara un punto a cada uno.",
-        button: "aceptar",
+        confirmButtonText: "aceptar",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          setGanadasJugador1(ganadasJugador1 + 1);
+          setGanadasJugador2(ganadasJugador2 + 1);
+          setGanador(0);
+          resetTablero();
+        } else {
+          setGanador(0);
+          resetTablero();
+        }
       });
-      resetGame();
+      // resetTablero();
     }
   }, [jugador, ganador]);
 
@@ -127,7 +151,7 @@ function Home({ jugadores }) {
     return ganador;
   };
 
-  const resetGame = () => {
+  const resetTablero = () => {
     setTablero([
       [0, 0, 0, 0, 0, 0, 0],
       [0, 0, 0, 0, 0, 0, 0],
@@ -142,14 +166,26 @@ function Home({ jugadores }) {
     setJugador(1);
   };
 
+  const resetGame = () => {
+    Swal.fire({
+      title: "Esta seguro?",
+      text: "Esta a punto de reiniciar el tablero",
+      showCancelButton: true,
+      confirmButtonText: "Si",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire("Listo!", "", "success");
+        setGanadasJugador1(0);
+        setGanadasJugador2(0);
+        resetTablero();
+      } else if (result.isDenied) {
+        Swal.fire("Changes are not saved", "", "info");
+      }
+    });
+  };
+
   return (
     <div className="contenedor-principal">
-      <div className={jugador === 1 ? "turnoJugador1" : "turnoJugador2"}>
-        <h1>
-          Turno del jugador:{" "}
-          {jugador === 1 ? jugadores.jugador1 : jugadores.jugador2}
-        </h1>
-      </div>
       <div className="menu">
         <div
           className={jugador === 1 ? "jugador1-activo" : "jugador1-inactivo"}
@@ -192,7 +228,10 @@ function Home({ jugadores }) {
             });
           })}
         </div>
-        <button onClick={resetGame}>Reset</button>
+
+        <button className="btn" onClick={resetGame}>
+          Reiniciar contadores
+        </button>
       </div>
     </div>
   );

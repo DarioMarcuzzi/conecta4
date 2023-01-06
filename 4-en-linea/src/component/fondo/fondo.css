@@ -10,6 +10,10 @@
   width: 100vw;
   height: 100vh;
   background-color: rgb(81, 83, 82);
+  /* background: rgb(192,0,255);
+  background: linear-gradient(180deg, rgba(192,0,255,1) 0%, rgba(230,255,2,1) 100%);   */
+  background-image: radial-gradient(circle at 51.8% 29.44%, #ffffa4 0, #ffffa2 8.33%, #ffffa0 16.67%, #ffffa0 25%, #edffa0 33.33%, #d3ff9f 41.67%, #b9f29d 50%, #a1e39b 58.33%, #8dd599 66.67%, #7cc999 75%, #6dbf99 83.33%, #61b899 91.67%, #56b19b 100%);
+
   flex-wrap: wrap;
   justify-content: space-between;
   overflow: hidden;
@@ -25,8 +29,9 @@
 }
 
 .btn-fondo:hover{
-  background-color: #23c483;
+  background-color:  black;
   transition: 0s;
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.577);
 
 }
 
