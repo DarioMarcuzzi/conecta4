@@ -12,7 +12,7 @@ Reglas:
   
   2.- Patadas , puños, piquete de ojos y pepinos estan prohibidos dentro del juego.
   
-  Quieres jugar... ve al enlace al sig enlace 
+  Quieres jugar... ve al enlace al sig enlace https://conecta4-drab.vercel.app/
   
 
 Buena suerte
